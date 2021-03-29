@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-    .row {
-        background-color: black;
+    .jumbotron {
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+        background-color: #e9ecef;
+        border-radius: .3rem;
     }
+
+    #jumbotronImages {
+        size: 100px;
+    }
+
 </style>
 <head>
     <meta charset="UTF-8">
@@ -11,9 +19,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "/css/bootstrap.css">
     <link rel="stylesheet" href = "/css/styles.css">
+    <script src="https://kit.fontawesome.com/97c819a18c.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
     <title>Home</title>
 </head>
 <body>
+
+<!--Navigation Bar-->
+
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid mx-4">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +35,7 @@
             </button>
             <a class="navbar-brand" href="index.html">HP</a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <ul class="navbar-nav mr-auto mt-lg-0">
                     <li class="nav-item">
                     <a class="nav-link" href="#">Photography</a>
                     </li>
@@ -39,10 +53,20 @@
         </div> 
     </nav>
 
-    <div id="carouselExampleControls" class="carousel slide" style="width: 100%; height: 500px !important;" data-bs-ride="carousel">
+<!--Carousel Slider-->
+    <div id="landingCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#landingCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#landingCarouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#landingCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="First slide">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Welcome!</h1>
+                    <h2>Glad you're here.</h2>
+                </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg?resize=750px:*" alt="Second slide">
@@ -51,61 +75,104 @@
                 <img class="d-block w-100" src="https://ichef.bbci.co.uk/news/976/cpsprodpb/12A9B/production/_111434467_gettyimages-1143489763.jpg" alt="Third slide">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#landingCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#landingCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+<!--Jumbotron (Adopted from BS4)-->
+    <div class="container-fluid">
+        <div class="col-fluid jumbotron">
+            <div class="row">
+                <div class="col">
+                    <h1 class="lead">Welcome to my portfolio website! Here will be a collection of my artistic endeavors and my code.</h1>
+                </div>
+                <div class="col">
+                    <h1 class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestiae officia, aliquam sed dicta quibusdam impedit quam unde nesciunt ipsum veniam aspernatur neque est aperiam? Unde voluptatem fuga dolores possimus.</h1>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
-    <!--Containers, Rows, and Columns-->
+<!--Showcase-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-camera"></i>
+                <h2 class = "mb-4">My Photos:</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-paint-brush"></i>
+                <h2 class = "mb-4">My Drawings:</h2>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <i class="fas fa-laptop-code"></i>
+                <h2 class = "mb-4">Or my code:</h2>
+            </div>
+        </div>
+    </div>
 
-    <div class="card-group">
-        <div class="card" style = "width: 18rem">
-            <div class="card-header">Here is a header</div>
-            <div class="card-body">
-                <img class = "card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
-                <div class="card-title">Here is a Title</div>
-                <div class="card-text">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </div>
-                <button class="btn btn-primary">Click Here!</button>
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6">
+
             </div>
         </div>
-        <div class="card" style = "width: 18rem">
-            <div class="card-header">Here is a header</div>
-            <div class="card-body">
-                <img class = "card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
-                <div class="card-title">Here is a Title</div>
-                <div class="card-text">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        <hr class="my-4">
+    </div>
+
+<!--Containers, Rows, and Columns-->
+    <div class="container-fluid">
+        <div class="card-group">
+            <div class="card" style = "width: 18rem">
+                <div class="card-header">Here is a header</div>
+                <div class="card-body">
+                    <img class = "card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
+                    <div class="card-title">Here is a Title</div>
+                    <div class="card-text">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </div>
+                    <button class="btn btn-primary">Click Here!</button>
                 </div>
-                <button class="btn btn-primary">Click Here!</button>
+            </div>
+            <div class="card" style = "width: 18rem">
+                <div class="card-header">Here is a header</div>
+                <div class="card-body">
+                    <img class = "card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
+                    <div class="card-title">Here is a Title</div>
+                    <div class="card-text">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </div>
+                    <button class="btn btn-primary">Click Here!</button>
+                </div>
+            </div>
+            <div class="card" style = "width: 18rem">
+                <div class="card-header">Here is a header</div>
+                <div class="card-body">
+                    <img class = "card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
+                    <div class="card-title">Here is a Title</div>
+                    <div class="card-text">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    </div>
+                    <button class="btn btn-primary">Click Here!</button>
+                </div>
             </div>
         </div>
-        <div class="card" style = "width: 18rem">
-            <div class="card-header">Here is a header</div>
-            <div class="card-body">
-                <img class = "card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
-                <div class="card-title">Here is a Title</div>
-                <div class="card-text">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </div>
-                <button class="btn btn-primary">Click Here!</button>
-            </div>
-        </div>
+    
     </div>
     <div class="container">
         <h1 style = "color:black">Buttons</h1>
@@ -245,9 +312,7 @@
     
 
 
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery-3.6.0.js"></script>
+   
 
     <script>
         let toastElList = [].slice.call(document.querySelectorAll('.toast'));
