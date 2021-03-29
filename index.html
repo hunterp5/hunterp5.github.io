@@ -12,6 +12,15 @@
         size: 100px;
     }
 
+    #aboutme1 {
+        width: 25rem;
+        border-radius: 10px;
+    }
+
+    #background1 {
+        width: 100%
+    }
+
 </style>
 <head>
     <meta charset="UTF-8">
@@ -85,7 +94,7 @@
         </button>
     </div>
 <!--Jumbotron (Adopted from BS4)-->
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <div class="col-fluid jumbotron">
             <div class="row">
                 <div class="col">
@@ -97,10 +106,10 @@
                 
             </div>
         </div>
-    </div>
+    </div> -->
 
 <!--Showcase-->
-    <div class="container-fluid padding">
+    <div class="container-fluid  mt-4">
         <div class="row text-center padding">
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <i class="fas fa-camera"></i>
@@ -115,66 +124,114 @@
                 <h2 class = "mb-4">Or my code:</h2>
             </div>
         </div>
+    </div><hr>
+
+<!--Quick About Me-->
+<div class="container-fluid padding">
+    <div class="row padding mt-4">
+        <div class="col-md-6 col-lg-6">
+            <h2>Dedicated to learning, for life.</h2>
+            <p>A formally trained chemist with a knack for art and coding! I'm passionate about making things, whether they are paper or digital. After recieving a B.S. in Chemistry/Biochemistry, I sought to 
+                diversify my skills into the technological realm to provide ample opportunities now and in the future for a lifetime of learning and creative projects. Follow along on my journey learning to build websites,
+                and eventually webapps!
+            </p>
+            <button class="btn btn-primary mb-4">Learn More</button>
+        </div>
+        <div class="col">
+            <h2>Doing my thing:</h2>
+            <!--<img id="aboutme1" src="/img/aboutme1.JPG"> -->
+        </div>
     </div>
+</div>
 
-    <div class="container-fluid padding">
-        <div class="row text-center padding">
-            <div class="col-xs-12 col-sm-6">
-
+<!--Fixed Background-->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+                <img id = "background1" src="img/background1.JPG">
             </div>
         </div>
-        <hr class="my-4">
+    </figure>
+
+<!--Social Media-->
+<div class="container padding my-5">
+    <div class="row text-center padding">
+        <div class="col-12">
+            <h2>Connect with Me:</h2><hr>
+        </div>
     </div>
+    <div class="row text-center social padding mt-5">
+        <div class="col-md-3 col-sm-6">
+            <a href="#"><i style="color:#3b5998" class="fab fa-facebook fa-4x"></i></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <a href="#"><i style="color:#8a3ab9" class="fab fa-instagram fa-4x"></i></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <a href="#"><i style="color:#0e76a8" class="fab fa-linkedin fa-4x"></i></a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <a href="#"><i style="color:black" class="fab fa-github fa-4x"></i></a>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer>
+    
+</footer>
 
 <!--Containers, Rows, and Columns-->
-    <div class="container-fluid">
-        <div class="card-group">
-            <div class="card" style = "width: 18rem">
-                <div class="card-header">Here is a header</div>
-                <div class="card-body">
-                    <img class = "card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
-                    <div class="card-title">Here is a Title</div>
-                    <div class="card-text">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
-                    <button class="btn btn-primary">Click Here!</button>
+<div class="container-fluid">
+    <div class="card-group">
+        <div class="card" style = "width: 18rem">
+            <div class="card-header">Here is a header</div>
+            <div class="card-body">
+                <img class = "card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
+                <div class="card-title">Here is a Title</div>
+                <div class="card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </div>
-            </div>
-            <div class="card" style = "width: 18rem">
-                <div class="card-header">Here is a header</div>
-                <div class="card-body">
-                    <img class = "card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
-                    <div class="card-title">Here is a Title</div>
-                    <div class="card-text">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
-                    <button class="btn btn-primary">Click Here!</button>
-                </div>
-            </div>
-            <div class="card" style = "width: 18rem">
-                <div class="card-header">Here is a header</div>
-                <div class="card-body">
-                    <img class = "card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
-                    <div class="card-title">Here is a Title</div>
-                    <div class="card-text">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                    </div>
-                    <button class="btn btn-primary">Click Here!</button>
-                </div>
+                <button class="btn btn-primary">Click Here!</button>
             </div>
         </div>
-    
+        <div class="card" style = "width: 18rem">
+            <div class="card-header">Here is a header</div>
+            <div class="card-body">
+                <img class = "card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
+                <div class="card-title">Here is a Title</div>
+                <div class="card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
+                <button class="btn btn-primary">Click Here!</button>
+            </div>
+        </div>
+        <div class="card" style = "width: 18rem">
+            <div class="card-header">Here is a header</div>
+            <div class="card-body">
+                <img class = "card-img-top" src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png">
+                <div class="card-title">Here is a Title</div>
+                <div class="card-text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </div>
+                <button class="btn btn-primary">Click Here!</button>
+            </div>
+        </div>
     </div>
-    <div class="container">
+</div>
+
+<!--Here are some buttons I made, and a pre-made container-->
+
+    <!-- <div class="container">
         <h1 style = "color:black">Buttons</h1>
         <button type="button" class="btn btn-primary btn-lg">Primary</button>
         <button type="button" class="btn btn-outline-dark btn-sm">Primary</button>
@@ -196,7 +253,7 @@
             <div class="col-md-8">Main Content</div>
             <div class="col-md-4">Sidebar</div>
         </div>
-    </div>
+    </div> -->
     
 
     <h1>Inline Text Elements</h1>
