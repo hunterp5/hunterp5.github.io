@@ -1,0 +1,63 @@
+.navbar {
+    padding: 0.6rem;
+}
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+#jumbotronImages {
+    size: 100px;
+}
+
+#aboutme1 {
+    width: 25rem;
+    border-radius: 10px;
+}
+
+#background1 {
+    height: 100%;
+}
+
+#footerTheme {
+    background-color: rgb(202, 202, 202);
+    color:rgb(80, 80, 80)
+}
+
+#siteLogo {
+    font-size: 1.5rem;
+}
+
+.carousel-caption {
+   position: absolute;
+   top: 50%; 
+}
+
+.carousel-caption h1 {
+   font-weight: 500;
+}
+.carousel-caption h2 {
+   font-weight: 200;
+}
+#socialMedia {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    color: white;
+}
+
+.social {
+    font-family: "Dancing Script";
+    font-weight: 400;
+    color: white;
+}
+
+/* #aboutMe {
+    width: 400px;
+} */
+
+.aboutBio {
+    font-size: large;
+    text-indent: 3rem;
+}
