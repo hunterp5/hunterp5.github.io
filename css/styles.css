@@ -12,11 +12,6 @@
     size: 100px;
 }
 
-#aboutme1 {
-    width: 25rem;
-    border-radius: 10px;
-}
-
 #background1 {
     height: 100%;
 }
@@ -57,3 +52,8 @@
     font-size: large;
     text-indent: 3rem;
 }
+
+#aboutMe {
+    max-width: 20rem;
+}
+
