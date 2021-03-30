@@ -48,6 +48,10 @@
     color: white;
 }
 
+.social-icon:hover {
+    transform: scale(1.2, 1.2);
+}
+
 .aboutBio {
     font-size: large;
     text-indent: 3rem;
@@ -55,5 +59,28 @@
 
 #aboutMe {
     max-width: 20rem;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #8a3ab9;
+}
+
+.fa-linkedin {
+    color:#0e76a8;
+}
+
+.fa-github {
+    color:black;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-github:hover {
+    color: #d5d5d5;
 }
 
