@@ -25,13 +25,13 @@
             <a href="index.html">
                 <img id="siteLogo" src="img/logo1.png" class="navbar-brand">
             </a>
-            <div class="collapse navbar-collapse px-3" id="navbarTogglerDemo03">
-                <ul class="navbar-nav mr-auto mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-lg-0 px-3">
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Photography</a>
+                    <a class="nav-link" href="photo.html">Photography</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#">Art</a>
@@ -39,10 +39,11 @@
                     <li class="nav-item">
                     <a class="nav-link" href="#">Code</a>
                     </li>
-                    <li class="nav-item active">
-                    <a class="nav-link active" href="about.html">About</a>
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
                     </li>
-                </ul>   
+                </ul>
+                  
             </div> 
         </div> 
     </nav>
@@ -71,21 +72,38 @@
 
     <!--Footer-->
     <footer>
-        <div id = "footerTheme" class="container-fluid bg-light pb-4">
+        <div id = "footerTheme" class="container-fluid bg-light py-5">
             <div class="row">
-                  <div class="col-md-6 text-center pt-4">
-                      <img id="footerImage" src="/img/logo1.png">
-                  </div>
-                  <div class="col-md-6 pt-5 text-center">
-                      <h1 style="color:black" class="pb-3 social">Hunter Picard</h1>
-                      <p><b>Cell: </b>316-123-4567</p>
-                      <p><b>Email: </b>hunterpicard@gmail.com</p>
-                  </div>
+                <div class="col-md-4 text-center">
+                    <img id="footerImage" src="/img/logo1.png">
+                </div>
+                <div class="col-md-4 text-center">
+                    <h1 style="color:black" class="social">Hunter Picard</h1><hr>
+                    <p><b>Cell: </b>316-123-4567</p>
+                    <p><b>Email: </b>hunterpicard@gmail.com</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h1 style="color:black" class="social">Social</h1><hr>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+                            <p class="pt-2 social-black">Facebook</p>
+                        </div>
+                        <div class="col">
+                            <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+                            <p class="pt-2 social-black">Instagram</p>
+                        </div>
+                        <div class="col">
+                            <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
+                            <p class="pt-2 social-black">Linkedin</p>
+                        </div>
+                        <div class="col">
+                            <a href="#"><i class="fab fa-github fa-3x"></i></a>
+                            <p class="pt-2 social-black">Github</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row-fluid pb-3">
-          <p class = "text-center mb-0 pt-3">&copy; 2021 Hunter Picard</p>
-        </div> 
-    </footer>
 </body>
 </html>

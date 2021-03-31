@@ -43,6 +43,12 @@
     color: white;
 }
 
+.social-black {
+    font-family: "Dancing Script";
+    font-weight: 400;
+    color: black;
+}
+
 .social-icon:hover {
     transform: scale(1.2, 1.2);
 }
