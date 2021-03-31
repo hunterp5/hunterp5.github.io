@@ -11,9 +11,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link rel="icon" href="img/logo1.png">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/97c819a18c.js" crossorigin="anonymous"></script>
         <script src="js/bootstrap.js"></script>
-        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/jquery-3.6.0.js" type="text/javascript"></script>
         <title>Photography</title>
     </head>
 </head>
@@ -50,17 +52,43 @@
     </nav>
     <div class="container-fluid text-center">
         <div class="row px-2">
-            <div class="col-md-4 col-sm-6 mt-4"><img class="w-100" src="/img/photo1.JPG"></div>
-            <div class="col-md-4 col-sm-6 mt-4"><img class="w-100" src="/img/photo2.JPG"></div>
-            <div class="col-md-4 col-sm-12 mt-4"><img class="w-100" src="/img/photo4.JPG"></div>
+            <div class="col-md-4 col-sm-6 mt-4">
+                <a href="/img/photo1.JPG" data-toggle="lightbox">
+                    <img src="/img/photo1.JPG" class="img-fluid galleryImage">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-4">
+                <a href="/img/photo2.JPG" data-toggle="lightbox">
+                    <img src="/img/photo2.JPG" class="img-fluid galleryImage" >
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-4">
+                <a href="/img/photo4.JPG" data-toggle="lightbox">
+                    <img src="/img/photo4.JPG" class="img-fluid galleryImage">
+                </a>
+            </div>
         </div>
-        <div class="col px-2 ">
-            <img class="w-100 mt-4" src="/img/photo3.JPG">
+        <div class="col px-2 mt-4">
+            <a href="/img/photo3.JPG" data-toggle="lightbox">
+                <img src="/img/photo3.JPG" class="img-fluid">
+            </a>
         </div>
         <div class="row px-2 pb-4">
-            <div class="col-md-4 col-sm-6 mt-4"><img class="w-100" src="/img/carousel1.JPG"></div>
-            <div class="col-md-4 col-sm-6 mt-4"><img class="w-100" src="/img/carousel2.JPG"></div>
-            <div class="col-md-4 col-sm-12 mt-4"><img class="w-100" src="/img/carousel3.JPG"></div>
+            <div class="col-md-4 col-sm-6 mt-4">
+                <a href="/img/carousel1.JPG" data-toggle="lightbox">
+                    <img src="/img/carousel1.JPG" class="img-fluid galleryImage">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-4">
+                <a href="/img/carousel2.JPG" data-toggle="lightbox">
+                    <img src="/img/carousel2.JPG" class="img-fluid galleryImage">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-4">
+                <a href="/img/carousel3.JPG" data-toggle="lightbox">
+                    <img src="/img/carousel3.JPG" class="img-fluid galleryImage">
+                </a>
+            </div>
         </div>
     </div>
 
