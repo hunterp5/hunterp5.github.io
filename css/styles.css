@@ -60,6 +60,7 @@
 
 #aboutMe {
     max-width: 20rem;
+    border-radius: 10px;
 }
 
 .fa-facebook {
