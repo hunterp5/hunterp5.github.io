@@ -3,7 +3,7 @@ Welcome to my Portfolio Website!
 Here is where I upload all my creative endeavors, from photography and art to code projects I have done. This site will be actively managed and improved upon as I gain the skills to do so. Here are some major highlights of the site:
 
 ----Built using Bootstrap:
-  Has a clean UI and a modern look. I have previously build a site without bootstrap, and I cant see myself not using it. My own styles are applied over the top of the pre-defined Bootstrap styles.
+  Has a clean UI and a modern look. I have previously built a site without bootstrap, and it makes building websites a breeze. My own styles are applied over the top of the pre-defined Bootstrap styles.
   
 ----Demonstrates Design Ability:
   I have no background in digital art or design; but I am trying to learn! This is my attempt at creating an attractive and functional site that is both navigable and easy on the eye.
