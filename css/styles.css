@@ -1,118 +1,106 @@
 .navbar {
-    padding: 0.6rem;
-}
-.jumbotron {
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    background-color: #e9ecef;
-    border-radius: .3rem;
-}
-
-#jumbotronImages {
-    size: 100px;
+  padding: 0.6rem;
 }
 
 #background1 {
-    height: 100%;
+  height: 100%;
 }
 
 #siteLogo {
-    width: 40px;
+  width: 40px;
 }
 
 .carousel-caption {
-   position: absolute;
-   top: 50%; 
+  position: absolute;
+  top: 50%;
 }
 
 .carousel-caption h1 {
-   font-weight: 500;
+  font-weight: 500;
 }
+
 .carousel-caption h2 {
-   font-weight: 200;
+  font-weight: 200;
 }
+
 #socialMedia {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: white;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: white;
 }
 
 .social {
-    font-family: "Dancing Script";
-    font-weight: 400;
-    color: white;
+  font-family: "Dancing Script";
+  font-weight: 400;
+  color: white;
 }
 
 .social-black {
-    font-family: "Dancing Script";
-    font-weight: 400;
-    color: black;
+  font-family: "Dancing Script";
+  font-weight: 400;
+  color: black;
 }
 
 .social-icon:hover {
-    transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
 }
 
 .aboutBio {
-    font-size: large;
-    text-indent: 3rem;
+  font-size: large;
+  text-indent: 3rem;
 }
 
 #aboutMe {
-    max-width: 20rem;
-    border-radius: 10px;
+  max-width: 20rem;
+  border-radius: 10px;
 }
 
 .fa-facebook {
-    color: #3b5998;
+  color: #3b5998;
 }
 
 .fa-instagram {
-    color: #8a3ab9;
+  color: #8a3ab9;
 }
 
 .fa-linkedin {
-    color:#0e76a8;
+  color: #0e76a8;
 }
 
 .fa-github {
-    color:black;
+  color: black;
 }
 
 .fa-facebook:hover,
 .fa-instagram:hover,
 .fa-linkedin:hover,
 .fa-github:hover {
-    color: #d5d5d5;
+  color: #d5d5d5;
 }
 
 #footerImage {
-    width: 13rem;
-    border-radius: 50%;
+  width: 12rem;
+  border-radius: 50%;
 }
 
 .goal {
-    color: white;
-    text-indent: 3rem;
+  color: white;
+  text-indent: 3rem;
 }
 
 .galleryImage {
-    box-shadow: 0px 0px 20px 8px #b4b4b4;
+  box-shadow: 0px 0px 20px 8px #b4b4b4;
 }
 
 .galleryImage:hover {
-    transform: scale(0.99);
-    box-shadow: 0px 0px 20px 8px grey;
+  transform: scale(0.99);
+  box-shadow: 0px 0px 20px 8px grey;
 }
 
 .codeList {
-    font-size: x-large;
+  font-size: x-large;
 }
 
 .artContainer {
-    background-color: black;
-}
-
-.artCaption {
-    
+  background-color: black;
 }
