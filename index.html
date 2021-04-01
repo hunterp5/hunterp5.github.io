@@ -11,7 +11,7 @@
     <link rel="icon" href="img/logo1.png">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/97c819a18c.js" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/jquery-3.6.0.js"></script>
     <title>Home</title>
 </head>
@@ -83,21 +83,6 @@
         </button>
     </div>
 
-<!--Jumbotron (Adopted from BS4)-->
-    <!-- <div class="container-fluid">
-        <div class="col-fluid jumbotron">
-            <div class="row">
-                <div class="col">
-                    <h1 class="lead">Welcome to my portfolio website! Here will be a collection of my artistic endeavors and my code.</h1>
-                </div>
-                <div class="col">
-                    <h1 class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestiae officia, aliquam sed dicta quibusdam impedit quam unde nesciunt ipsum veniam aspernatur neque est aperiam? Unde voluptatem fuga dolores possimus.</h1>
-                </div>
-                
-            </div>
-        </div>
-    </div> -->
-
 <!--Quick About Me-->
 <div class="container-fluid bg-light">
     <div class="row mx-5 py-4 px-4">
@@ -134,39 +119,30 @@
                 <h5 class="pt-4">I have done multiple pencil drawings and some inkwell paintings. I am currently learning digital design; I made the site logo by hand!</h5>
             </div>
         </div>
-    </div>
-
-<!--Fixed Background-->
-    <!-- <figure>
-        <div class="fixed-wrap">
-            <div id="fixed">
-                <img id = "background1" src="img/background1.JPG">
-            </div>
-        </div>
-    </figure> -->
+    </div>  
 
 <!--Social Media-->
-<div id="socialMedia" class="container-fluid bg-dark py-5 px-5">
+<div id="socialMedia" style = "background: url(img/photo3.JPG) no-repeat center center fixed; background-size: cover" class="container-fluid bg-dark py-5 px-5">
     <div class="row text-center">
         <div class="col-12">
-            <h2 class="social">Connect with Me:</h2><hr>
+            <h1 class="social">Connect with Me:</h1><hr>
         </div>
     </div>
     <div class="row text-center social pt-5 px-5">
         <div class="col-md-3 col-sm-6 social-icon">
-            <a href="#"><i class="fab fa-facebook fa-5x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-7x"></i></a>
             <h5 class="pt-2 social">Facebook</h5>
         </div>
         <div class="col-md-3 col-sm-6 social-icon">
-            <a href="#"><i class="fab fa-instagram fa-5x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-7x"></i></a>
             <h5 class="pt-2 social">Instagram</h5>
         </div>
         <div class="col-md-3 col-sm-6 social-icon">
-            <a href="#"><i class="fab fa-linkedin fa-5x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-7x"></i></a>
             <h5 class="pt-2 social">Linkedin</h5>
         </div>
         <div class="col-md-3 col-sm-6 social-icon">
-            <a href="#"><i class="fab fa-github fa-5x"></i></a>
+            <a href="#"><i class="fab fa-github fa-7x"></i></a>
             <h5 class="pt-2 social">Github</h5>
         </div>
     </div>
@@ -174,15 +150,12 @@
 
 <!--Footer-->
 <footer>
-  <div id = "footerTheme" class="container-fluid bg-light py-5">
+  <div id = "footerTheme" class="container-fluid bg-dark py-4">
       <div class="row">
-            <div class="col-md-6 text-center pt-4">
-                <img id="footerImage" src="/img/logo1.png">
-            </div>
-            <div class="col-md-6 pt-5 text-center">
-                <h1 style="color:black" class="pb-3 social">Hunter Picard</h1>
-                <p><b>Cell: </b>316-123-4567</p>
-                <p><b>Email: </b>hunterpicard@gmail.com</p>
+            <div class="col-md-3 text-center">
+                <a href="contact.html">
+                    <img id="footerImage" style="width: 5rem" src="/img/logo1.png">
+                </a>
             </div>
       </div>
   </div>
