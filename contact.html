@@ -50,21 +50,16 @@
         </div> 
     </nav>
 
-    <div class="container-fluid px-5 py-5 bg-primary">
-        <h1 class="social-black">Coming Soon!</h1>
-    </div>
-    <!-- <div class="container-fluid">
-        <form id="form" method="POST">
-            <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required><br>
-            <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required><br>
-            <label for="name">Email</label>
+    <div class="container-fluid bg-primary py-5">
+        <form action="contact_me.php" id="form" method="POST">
+            <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required><br>
+            <label for="name">Email: </label>
                 <input type="email" id="email" name="email" required><br>
-            <label for="message">Message</label>
+            <label for="message">Message: </label>
                 <input type="text" id="message" name="message">
-            <input type="submit" value="Contact">
-        </form> -->
+            <input type="submit" name="submit" value="Submit">
+        </form>
         <script>
             //This sends all form entries to local storage for the time being.
             let userInfo = [];
@@ -72,14 +67,13 @@
             form.addEventListener('submit', function(event) {
                 event.preventDefault() //prevents autosubmit
                     let userInput = {
-                        firstName: document.getElementById("firstName").value,
-                        lastName: document.getElementById("lastName").value,
+                        firstName: document.getElementById("first_name").value,
+                        lastName: document.getElementById("last_name").value,
                         email: document.getElementById("email").value,
                         message: document.getElementById("message").value,
                     }
                 userInfo.push(userInput);
                 console.warn('added', {userInfo})
-                form.reset();
                 localStorage.setItem("myUserInfo", JSON.stringify(userInfo))
             })
         </script> 
