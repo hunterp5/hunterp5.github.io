@@ -79,7 +79,7 @@
 }
 
 #footerImage {
-  width: 12rem;
+  width: 5rem;
   border-radius: 50%;
 }
 
@@ -103,4 +103,23 @@
 
 .artContainer {
   background-color: black;
+}
+
+@media (max-width: 576px) {
+  .social-icon {
+    transform: scale(0.8);
+  }
+  .carousel-caption {
+    transform: scale(0.5);
+  }
+
+  #footerImage {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #footerImage {
+    margin-bottom: 1rem;
+  }
 }
